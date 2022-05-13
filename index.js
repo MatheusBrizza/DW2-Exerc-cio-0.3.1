@@ -18,5 +18,21 @@ const filmes = [
     lancamento: 1999,
     diretores: ['Lana Wachowski', 'Lilly Wachowski'],
     generos: ['Ação', 'Ficção Cientifica'],
-  }
-]
+  },
+];
+
+const apenasNome = (filme) => {
+  const objeto = {
+    nome: filme.nome,
+    lancamento: filme.lancamento,
+  };
+  return objeto;
+};
+
+const idFilmes = (filme, index) => {
+  
+}
+
+const filmesNomeLancamento = filmes.map(apenasNome);
+
+console.log(filmesNomeLancamento);
