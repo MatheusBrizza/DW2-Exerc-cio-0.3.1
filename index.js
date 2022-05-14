@@ -30,9 +30,16 @@ const apenasNome = (filme) => {
 };
 
 const idFilmes = (filme, index) => {
-  
-}
+  const objeto2 = {
+    id: index + 1,
+    nome: filme.nome,
+    lancamento: filme.lancamento,
+  };
+  return objeto2;
+};
 
-const filmesNomeLancamento = filmes.map(apenasNome);
+//const filmesNomeLancamento = filmes.map(apenasNome);
+
+const filmesNomeLancamento = filmes.map(idFilmes);
 
 console.log(filmesNomeLancamento);
