@@ -21,6 +21,7 @@ const filmes = [
   },
 ];
 
+//Enunciado 1
 const apenasNome = (filme) => {
   const objeto = {
     nome: filme.nome,
@@ -29,6 +30,11 @@ const apenasNome = (filme) => {
   return objeto;
 };
 
+const filmes1 = filmes.map(apenasNome);
+
+console.log(filmes1);
+
+//Enunciado 2
 const idFilmes = (filme, index) => {
   const objeto2 = {
     id: index + 1,
@@ -37,9 +43,6 @@ const idFilmes = (filme, index) => {
   };
   return objeto2;
 };
+const filmes2 = filmes.map(idFilmes);
 
-//const filmesNomeLancamento = filmes.map(apenasNome);
-
-const filmesNomeLancamento = filmes.map(idFilmes);
-
-console.log(filmesNomeLancamento);
+console.log(filmes2);
